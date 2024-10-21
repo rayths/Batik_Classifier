@@ -226,7 +226,8 @@ if selected_tab == "Upload":
                     <p><strong>Rekomendasi Acara:</strong> {batik_data['rekomendasi_acara']}</p>
                 </div>
                 """
-                st.write(html_info, unsafe_allow_html=True)
+                container = st.container(border=True)
+                container.write(html_info, unsafe_allow_html=True)
 
 elif selected_tab == "Take a Photo":
     # Membuat form untuk mengambil foto
@@ -255,4 +256,5 @@ elif selected_tab == "Take a Photo":
                     <p><strong>Rekomendasi Acara:</strong> {batik_data['rekomendasi_acara']}</p>
                 </div>
                 """
-                st.write(html_info, unsafe_allow_html=True)
+                container = st.container(border=True)
+                container.write(html_info, unsafe_allow_html=True)
