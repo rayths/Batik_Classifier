@@ -13,7 +13,9 @@ st.set_page_config(
 st.header(':blue[Know Your Batik]', divider="gray")
 st.write('''<div style="text-align: justify">
          <h3>Apa Itu KNOB (Know Your Batik)?</h3>
-         Know Your Batik merupakan aplikasi yang memungkinkan Anda mendeteksi jenis batik berdasarkan gambar yang Anda unggah atau foto.
+         Know Your Batik merupakan website yang memungkinkan Anda mendeteksi jenis batik berdasarkan gambar yang Anda unggah atau foto. 
+         Untuk mengatasi kendala kurangnya pemahaman masyarakat tentang ragam batik dan mencegah terjadinya klaim budaya oleh negara lain, website "Know Your Batik hadir sebagai solusi inovatif. 
+         Website ini dirancang untuk membantu pengguna mengenali dan memahami jenis-jenis batik melalui teknologi "image processing".
          </div>''', unsafe_allow_html=True)
 
 st.write("<hr>", unsafe_allow_html=True)
