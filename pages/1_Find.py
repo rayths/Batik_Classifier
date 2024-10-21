@@ -53,9 +53,9 @@ std = [0.229, 0.224, 0.225]
 # Image transformations
 val_transform = transforms.Compose([
     transforms.Resize((128, 128)),
-    transform.RandomHorizontalFlip(),
-    transform.RandomVerticalFlip(),
-    transform.RandomRotation(20),
+    transforms.RandomHorizontalFlip(),
+    transforms.RandomVerticalFlip(),
+    transforms.RandomRotation(20),
     transforms.ToTensor(),
     transforms.Normalize(mean=mean, std=std),
 ])
