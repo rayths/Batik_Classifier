@@ -30,7 +30,7 @@ def load_model():
     try:
         model = models.resnet18(pretrained=True)
         model.fc = nn.Linear(model.fc.in_features, 20)
-        model_path = r'rayths/KNOB/batik_classifier_model.pth'
+        model_path = r'batik_classifier_model.pth'
         model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
         model.eval()
         return model
