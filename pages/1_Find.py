@@ -83,26 +83,26 @@ def predict_uploaded_image(uploaded_file, model, transform, int_label):
 
 # Informasi tambahan tentang kelas batik 
 batik_info = {
-    'Batik Bali': "Batik Bali umumnya memiliki motif yang terinspirasi dari alam dan mitologi.",
-    'Batik Lasem': "Batik Lasem dikenal dengan warna-warna cerah dan motif yang dipengaruhi budaya China.",
-    'Batik Betawi': "Batik Betawi memiliki motif yang beragam, seringkali menggambarkan flora dan fauna.",
-    'Batik Mega Mendung': "Batik Mega Mendung khas Cirebon dengan motif awan bergaya Tiongkok.",
-    'Batik Celup': "Batik Celup dibuat dengan teknik celup ikat, menghasilkan motif abstrak dan dinamis.",
-    'Batik Parang': "Batik Parang memiliki motif huruf 'S' yang saling terkait, melambangkan kontinuitas.",
-    'Batik Cendrawasih': "Batik Cendrawasih menampilkan motif burung cendrawasih yang indah dan eksotis.",
-    'Batik Pekalongan': "Batik Pekalongan dikenal dengan warna-warna cerah dan motif yang rumit.",
-    'Batik Ceplok': "Batik Ceplok memiliki motif geometris, seperti lingkaran, kotak, dan bintang.",
-    'Batik Priangan': "Batik Priangan memiliki warna-warna lembut dan motif yang naturalis.",
-    'Batik Ciamis': "Batik Ciamis dikenal dengan motif ayam jago dan tumbuhan paku.",
-    'Batik Sekar': "Batik Sekar memiliki motif bunga yang beragam dan indah.",
-    'Batik Garutan': "Batik Garutan terkenal dengan motif lereng dan kombinasi warna yang khas.",
-    'Batik Sidoluhur': "Batik Sidoluhur memiliki motif yang rumit dan filosofis, sering digunakan dalam upacara adat.",
-    'Batik Gentongan': "Batik Gentongan diproses dengan direndam dalam gentong, menghasilkan warna yang khas.",
-    'Batik Sidomukti': "Batik Sidomukti memiliki motif yang melambangkan kemakmuran dan kesejahteraan.",
-    'Batik Kawung': "Batik Kawung memiliki motif bulatan yang melambangkan keadilan dan keseimbangan.",
-    'Batik Sogan': "Batik Sogan memiliki warna cokelat yang khas dan motif yang sederhana.",
-    'Batik Keraton': "Batik Keraton memiliki motif yang sakral dan hanya boleh dikenakan oleh keluarga kerajaan.",
-    'Batik Tambal': "Batik Tambal dibuat dengan menggabungkan potongan-potongan kain perca."
+    'Batik Bali': "Batik Bali umumnya memiliki motif yang terinspirasi dari alam dan mitologi. Batik ini berasal dari daerah Bali.",
+    'Batik Lasem': "Batik Lasem dikenal dengan warna-warna cerah dan motif yang dipengaruhi budaya China. Batik ini berasal dari daerah Rembang, Jawa Tengah.",
+    'Batik Betawi': "Batik Betawi memiliki motif yang beragam, seringkali menggambarkan flora dan fauna. Batik ini berasal dari daerah Jakarta.",
+    'Batik Mega Mendung': "Batik Mega Mendung khas dengan motif awan bergaya Tiongkok. Batik ini berasal dari daerah Cirebon, Jawa Barat.",
+    'Batik Celup': "Batik Celup dibuat dengan teknik celup ikat, menghasilkan motif abstrak dan dinamis. Batik ini banyak digunakan diberbagai daerah di Indonesia.",
+    'Batik Parang': "Batik Parang memiliki motif huruf 'S' yang saling terkait, melambangkan kontinuitas. Batik ini berasal dari daerah Yogyakarta dan Solo.",
+    'Batik Cendrawasih': "Batik Cendrawasih menampilkan motif burung cendrawasih yang indah dan eksotis. Batik ini berasal dari daerah Papua.",
+    'Batik Pekalongan': "Batik Pekalongan dikenal dengan warna-warna cerah dan motif yang rumit. Batik ini berasal dari daerah Pekalongan, Jawa Tengah.",
+    'Batik Ceplok': "Batik Ceplok memiliki motif geometris, seperti lingkaran, kotak, dan bintang. Batik ini berasal dari daerah Bantul, Yogyakarta.",
+    'Batik Priangan': "Batik Priangan memiliki warna-warna lembut dan motif yang naturalis. Batik ini berasal dari daerah Jawa Barat dan Banten.",
+    'Batik Ciamis': "Batik Ciamis dikenal dengan motif ayam jago dan tumbuhan paku. Batik ini berasal dari daerah Ciamis, Jawa Barat.",
+    'Batik Sekar': "Batik Sekar memiliki motif bunga yang beragam dan indah. Batik ini berasal dari daerah Solo dan Yoyakarta.",
+    'Batik Garutan': "Batik Garutan terkenal dengan motif lereng dan kombinasi warna yang khas. Batik ini berasal dari daerah Garut, Jawa Barat.",
+    'Batik Sidoluhur': "Batik Sidoluhur memiliki motif yang rumit dan filosofis, sering digunakan dalam upacara adat. Batik ini berasal dari daerah Yoyakarta dan Surakarta.",
+    'Batik Gentongan': "Batik Gentongan diproses dengan direndam dalam gentong, menghasilkan warna yang khas. Batik ini berasal dari daerah Madura.",
+    'Batik Sidomukti': "Batik Sidomukti memiliki motif yang melambangkan kemakmuran dan kesejahteraan. Batik ini berasal dari daerah Solo dan Yogyakarta.",
+    'Batik Kawung': "Batik Kawung memiliki motif bulatan yang melambangkan keadilan dan keseimbangan. Batik ini berasal dari daerah Yogyakarta.",
+    'Batik Sogan': "Batik Sogan memiliki warna cokelat yang khas dan motif yang sederhana. Batik ini berasal dari daerah Solo dan Yogyakarta.",
+    'Batik Keraton': "Batik Keraton memiliki motif yang sakral dan hanya boleh dikenakan oleh keluarga kerajaan. Batik ini berasal dari daerah Yogyakarta dan Surakarta.",
+    'Batik Tambal': "Batik Tambal dibuat dengan menggabungkan potongan-potongan kain perca. Batik ini berasal dari daerah Yogyakarta."
 }
 
 if selected_tab == "Upload": 
