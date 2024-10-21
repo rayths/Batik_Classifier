@@ -14,7 +14,7 @@ st.header(':blue[Know Your Batik]', divider="gray")
 st.write('''<div style="text-align: justify">
          <h3>Apa Itu KNOB (Know Your Batik)?</h3>
          Know Your Batik merupakan website yang memungkinkan pengguna mendeteksi jenis batik berdasarkan gambar yang diunggah atau foto. 
-         Untuk mengatasi kendala kurangnya pemahaman masyarakat tentang ragam batik dan mencegah terjadinya klaim budaya oleh negara lain, website "Know Your Batik hadir sebagai solusi inovatif. 
+         Untuk mengatasi kendala kurangnya pemahaman masyarakat tentang ragam batik dan mencegah terjadinya klaim budaya oleh negara lain, website Know Your Batik hadir sebagai solusi inovatif. 
          Website ini dirancang untuk membantu pengguna mengenali dan memahami jenis-jenis batik melalui teknologi <i>image processing</i>.
          </div>''', unsafe_allow_html=True)
 
