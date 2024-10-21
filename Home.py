@@ -1,8 +1,6 @@
-import io
 from PIL import Image
 import streamlit as st
 from streamlit_option_menu import option_menu
-from st_pages import Page, show_pages
 
 logo = Image.open('assets/Logo.png')
 st.set_page_config(
