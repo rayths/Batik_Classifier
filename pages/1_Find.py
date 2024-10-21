@@ -84,115 +84,115 @@ def predict_uploaded_image(uploaded_file, model, transform, int_label):
 # Informasi tambahan tentang kelas batik 
 batik_info = {
     'Batik Bali': {
-        'deskripsi': "Batik Bali umumnya memiliki motif yang terinspirasi dari alam dan mitologi. Batik ini berasal dari daerah Bali.",
+        'deskripsi': "Batik Bali umumnya memiliki motif yang terinspirasi dari alam dan mitologi.",
         'makna': "Menggambarkan keseimbangan antara manusia dan alam, terinspirasi dari flora dan fauna Bali serta mitologi Hindu.",
         'asal': "Bali",
         'rekomendasi_acara': "Cocok digunakan pada acara keagamaan, pernikahan, atau upacara adat di Bali."
     },
     'Batik Lasem': {
-        'deskripsi': "Batik Lasem dikenal dengan warna-warna cerah dan motif yang dipengaruhi budaya China. Batik ini berasal dari daerah Rembang, Jawa Tengah.",
+        'deskripsi': "Batik Lasem dikenal dengan warna-warna cerah dan motif yang dipengaruhi budaya China.",
         'makna': "Memadukan budaya Tionghoa dan Jawa dengan simbol-simbol keberuntungan dan kesejahteraan.",
         'asal': "Lasem, Rembang, Jawa Tengah",
         'rekomendasi_acara': "Sesuai untuk acara budaya, perayaan Imlek, atau acara formal dengan nuansa budaya Tionghoa."
     },
     'Batik Betawi': {
-        'deskripsi': "Batik Betawi memiliki motif yang beragam, seringkali menggambarkan flora dan fauna. Batik ini berasal dari daerah Jakarta.",
+        'deskripsi': "Batik Betawi memiliki motif yang beragam, seringkali menggambarkan flora dan fauna.",
         'makna': "Mencerminkan kebhinekaan budaya Betawi, dengan motif flora dan fauna khas Jakarta.",
         'asal': "Jakarta",
         'rekomendasi_acara': "Cocok untuk acara-acara tradisional Betawi seperti pernikahan adat Betawi dan festival budaya."
     },
     'Batik Mega Mendung': {
-        'deskripsi': "Batik Mega Mendung khas dengan motif awan bergaya Tiongkok. Batik ini berasal dari daerah Cirebon, Jawa Barat.",
+        'deskripsi': "Batik Mega Mendung khas dengan motif awan bergaya Tiongkok.",
         'makna': "Melambangkan ketenangan dan keseimbangan hidup melalui motif awan.",
         'asal': "Cirebon, Jawa Barat",
         'rekomendasi_acara': "Sesuai untuk acara keagamaan, seminar, atau pertemuan formal."
     },
     'Batik Parang': {
-        'deskripsi': "Batik Parang memiliki motif huruf 'S' yang saling terkait, melambangkan kontinuitas. Batik ini berasal dari daerah Yogyakarta dan Solo.",
+        'deskripsi': "Batik Parang memiliki motif huruf 'S' yang saling terkait, melambangkan kontinuitas.",
         'makna': "Mengandung filosofi kekuatan dan ketangguhan, dengan motif 'S' yang saling berkelindan.",
         'asal': "Yogyakarta dan Solo",
         'rekomendasi_acara': "Cocok digunakan pada acara adat, pernikahan tradisional, atau sebagai simbol kehormatan."
     },
     'Batik Cendrawasih': {
-        'deskripsi': "Batik Cendrawasih menampilkan motif burung cendrawasih yang indah dan eksotis. Batik ini berasal dari daerah Papua.",
+        'deskripsi': "Batik Cendrawasih menampilkan motif burung cendrawasih yang indah dan eksotis.",
         'makna': "Melambangkan keindahan dan keanggunan melalui gambar burung Cendrawasih.",
         'asal': "Papua",
         'rekomendasi_acara': "Cocok untuk acara budaya Papua, pameran seni, atau perayaan nasional."
     },
     'Batik Pekalongan': {
-        'deskripsi': "Batik Pekalongan dikenal dengan warna-warna cerah dan motif yang rumit. Batik ini berasal dari daerah Pekalongan, Jawa Tengah.",
+        'deskripsi': "Batik Pekalongan dikenal dengan warna-warna cerah dan motif yang rumit.",
         'makna': "Melambangkan kreativitas dan inovasi dengan motif yang rumit dan warna-warna cerah.",
         'asal': "Pekalongan, Jawa Tengah",
         'rekomendasi_acara': "Sesuai untuk acara formal, pameran batik, atau acara kebudayaan."
     },
     'Batik Ceplok': {
-        'deskripsi': "Batik Ceplok memiliki motif geometris, seperti lingkaran, kotak, dan bintang. Batik ini berasal dari daerah Bantul, Yogyakarta.",
+        'deskripsi': "Batik Ceplok memiliki motif geometris, seperti lingkaran, kotak, dan bintang.",
         'makna': "Melambangkan keteraturan dan keseimbangan dengan pola geometris yang harmonis.",
         'asal': "Bantul, Yogyakarta",
         'rekomendasi_acara': "Cocok untuk acara formal, pameran seni, atau upacara adat."
     },
     'Batik Priangan': {
-        'deskripsi': "Batik Priangan memiliki warna-warna lembut dan motif yang naturalis. Batik ini berasal dari daerah Jawa Barat dan Banten.",
+        'deskripsi': "Batik Priangan memiliki warna-warna lembut dan motif yang naturalis.",
         'makna': "Melambangkan keindahan alam dan ketenangan hidup.",
         'asal': "Jawa Barat dan Banten",
         'rekomendasi_acara': "Sesuai untuk acara pernikahan, perayaan budaya, atau acara formal lainnya."
     },
     'Batik Ciamis': {
-        'deskripsi': "Batik Ciamis dikenal dengan motif ayam jago dan tumbuhan paku. Batik ini berasal dari daerah Ciamis, Jawa Barat.",
+        'deskripsi': "Batik Ciamis dikenal dengan motif ayam jago dan tumbuhan paku.",
         'makna': "Menggambarkan kekuatan dan keindahan alam.",
         'asal': "Ciamis, Jawa Barat",
         'rekomendasi_acara': "Cocok digunakan pada acara budaya lokal atau pernikahan adat."
     },
     'Batik Sekar': {
-        'deskripsi': "Batik Sekar memiliki motif bunga yang beragam dan indah. Batik ini berasal dari daerah Solo dan Yogyakarta.",
+        'deskripsi': "Batik Sekar memiliki motif bunga yang beragam dan indah.",
         'makna': "Melambangkan keindahan, kesuburan, dan kehidupan yang berlimpah.",
         'asal': "Solo dan Yogyakarta",
         'rekomendasi_acara': "Cocok untuk acara pernikahan, festival budaya, atau acara formal lainnya."
     },
     'Batik Garutan': {
-        'deskripsi': "Batik Garutan terkenal dengan motif lereng dan kombinasi warna yang khas. Batik ini berasal dari daerah Garut, Jawa Barat.",
+        'deskripsi': "Batik Garutan terkenal dengan motif lereng dan kombinasi warna yang khas.",
         'makna': "Melambangkan keuletan dan ketekunan dalam kehidupan.",
         'asal': "Garut, Jawa Barat",
         'rekomendasi_acara': "Sesuai untuk acara formal, pameran batik, atau perayaan budaya."
     },
     'Batik Sidoluhur': {
-        'deskripsi': "Batik Sidoluhur memiliki motif yang rumit dan filosofis, sering digunakan dalam upacara adat. Batik ini berasal dari daerah Yogyakarta dan Surakarta.",
+        'deskripsi': "Batik Sidoluhur memiliki motif yang rumit dan filosofis, sering digunakan dalam upacara adat.",
         'makna': "Melambangkan harapan akan kedudukan yang luhur dan mulia dalam kehidupan.",
         'asal': "Yogyakarta dan Surakarta",
         'rekomendasi_acara': "Cocok untuk upacara adat dan pernikahan tradisional."
     },
     'Batik Gentongan': {
-        'deskripsi': "Batik Gentongan diproses dengan direndam dalam gentong, menghasilkan warna yang khas. Batik ini berasal dari daerah Madura.",
+        'deskripsi': "Batik Gentongan diproses dengan direndam dalam gentong, menghasilkan warna yang khas.",
         'makna': "Mencerminkan ketekunan dan kerajinan dalam pembuatan batik.",
         'asal': "Madura",
         'rekomendasi_acara': "Sesuai untuk acara formal, pameran seni, atau festival budaya."
     },
     'Batik Sidomukti': {
-        'deskripsi': "Batik Sidomukti memiliki motif yang melambangkan kemakmuran dan kesejahteraan. Batik ini berasal dari daerah Solo dan Yogyakarta.",
+        'deskripsi': "Batik Sidomukti memiliki motif yang melambangkan kemakmuran dan kesejahteraan.",
         'makna': "Melambangkan harapan untuk hidup yang makmur dan sejahtera.",
         'asal': "Solo dan Yogyakarta",
         'rekomendasi_acara': "Cocok digunakan pada acara pernikahan adat dan upacara resmi."
     },
     'Batik Kawung': {
-        'deskripsi': "Batik Kawung memiliki motif bulatan yang melambangkan keadilan dan keseimbangan. Batik ini berasal dari daerah Yogyakarta.",
+        'deskripsi': "Batik Kawung memiliki motif bulatan yang melambangkan keadilan dan keseimbangan.",
         'makna': "Melambangkan keadilan, keseimbangan, dan kebijaksanaan.",
         'asal': "Yogyakarta",
         'rekomendasi_acara': "Cocok untuk acara resmi, upacara adat, atau pertemuan formal."
     },
     'Batik Sogan': {
-        'deskripsi': "Batik Sogan memiliki warna cokelat yang khas dan motif yang sederhana. Batik ini berasal dari daerah Solo dan Yogyakarta.",
+        'deskripsi': "Batik Sogan memiliki warna cokelat yang khas dan motif yang sederhana.",
         'makna': "Melambangkan kesederhanaan dan ketenangan.",
         'asal': "Solo dan Yogyakarta",
         'rekomendasi_acara': "Sesuai untuk acara formal, pertemuan keluarga, atau upacara adat."
     },
     'Batik Keraton': {
-        'deskripsi': "Batik Keraton memiliki motif yang sakral dan hanya boleh dikenakan oleh keluarga kerajaan. Batik ini berasal dari daerah Yogyakarta dan Surakarta.",
+        'deskripsi': "Batik Keraton memiliki motif yang sakral dan hanya boleh dikenakan oleh keluarga kerajaan.",
         'makna': "Melambangkan kekuasaan dan kebangsawanan.",
         'asal': "Yogyakarta dan Surakarta",
         'rekomendasi_acara': "Sesuai untuk upacara kerajaan atau acara adat yang sakral."
     },
     'Batik Tambal': {
-        'deskripsi': "Batik Tambal dibuat dengan menggabungkan potongan-potongan kain perca. Batik ini berasal dari daerah Yogyakarta.",
+        'deskripsi': "Batik Tambal dibuat dengan menggabungkan potongan-potongan kain perca.",
         'makna': "Melambangkan harapan untuk perbaikan dalam kehidupan.",
         'asal': "Yogyakarta",
         'rekomendasi_acara': "Cocok untuk acara budaya, festival, atau kegiatan seni."
